@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="styles.css">
+  <script>
+        
+  </script>
+
+</head>
+<body>
+    <div class="card">
+        <!-- <img class="card-img" src="https://im.indiatimes.in/content/2023/Jun/desktop-wallpaper-shahrukh-khan-king-bollywood-srk-shahrukhkhan-thumbnail_64998642ee592.jpg" alt="Profile Picture">  -->
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-LRZu6pXAiG6jbTQUmTyb4vgsNo3XV2mnFg&s" alt="">
+        <h1>Anu</h1>
+        <h5>Stranger</h5>
+        <div id="btn-container">
+            <button id="remove">Unfriend</button>
+            <button id="add">Add Friend</button>
+        </div> 
+    </div>
+
+    <script>
+        var stat = document.querySelector("h5"); 
+        var addFriend = document.querySelector("#add");
+        var unFriend = document.querySelector("#remove");
+
+        addFriend.addEventListener("click", function(){
+            stat.innerHTML = "Friends";
+            stat.style.color = "purple";
+        });
+
+        unFriend.addEventListener("click", function(){
+            stat.innerHTML = "Stranger";
+            stat.style.color = "pink";
+        });
+    </script>
+</body>
+</html>
